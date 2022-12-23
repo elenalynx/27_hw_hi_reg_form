@@ -1,0 +1,138 @@
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #DACEC6;
+    border-radius: 5px;
+    color: #68513F;
+}
+
+td, th {
+    border: solid 1px;
+    padding: 2px 3px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+input, textarea {
+    padding: 2px;
+    margin: 5px 0;
+    border: 1px solid #DACEC6;
+    border-radius: 5px;
+    color: #68513F;
+}
+
+button {
+    background: #F1EBE7;
+    border: 1px solid #DACEC6;
+    border-radius: 5px;
+    color: #68513F;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 12px 119px 13px;
+    margin: 5px auto;
+}
+
+.section_reg-form {
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal_reg-form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #00000099;
+    transition: all 0.3s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_reg-form__content {
+    width: 400px;
+    background: #E7DED8;
+    border: 2px solid #DACEC6;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.form__content {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+}
+
+.icon-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+    margin: 0;
+}
+
+.section_table {
+    background: #E7DED8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table_result-input {
+    width: 100%;
+    background: #ffffff;
+    margin: 5px auto;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}

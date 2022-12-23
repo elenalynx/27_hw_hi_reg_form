@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="section_reg-form">
+    <div class="container">
+        <div class="modal_reg-form hide d-flex justify-center align-center" data-action="close">
+            <form class="modal_reg-form__content">
+                <button type="button" class="icon-close-btn" data-action="close">
+                    🗙
+                </button>
+                <h2>Registration form</h2>
+                <div class="form__content">
+                    <div class="form-firstName d-grid">
+                        <label for="firstName">First name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter first name" required>
+                    </div>
+
+                    <div class="form-lastName d-grid">
+                        <label for="lastName">Last name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter last name" required>
+                    </div>
+
+                    <div class="form-birthday d-grid">
+                        <label for="birthday">Birthday</label>
+                        <input type="text" name="birthday" id="birthday" placeholder="Enter birthday" required>
+                    </div>
+
+                    <div class="form-gender-radio">
+                        <input type="radio" name="gender" id="male" value="male" required checked>
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="form-address d-grid">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="20" rows="2"
+                                  placeholder="Please enter your address..."
+                                  required></textarea>
+                    </div>
+                    <div class="form-language d-grid">
+                        <div>
+                            <input type="checkbox" name="language" id="ukrainian" value="ukrainian" checked>
+                            <label for="ukrainian">Ukrainian</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="language" id="english" value="english">
+                            <label for="english">English</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="language" id="polish" value="polish">
+                            <label for="polish">Polish</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="language" id="german" value="german">
+                            <label for="german">German</label>
+                        </div>
+                    </div>
+
+                    <div class="form-btn-submit d-grid">
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <button type="button" class="btn_open_modal d-flex justify-center align-center">
+        Open registration form
+    </button>
+</div>
+<section class="section_table">
+    <div class="container">
+        <table class="table_result-input">
+            <thead class="table_result-input__title">
+            <tr>
+                <th>
+                    First name
+                </th>
+                <th>
+                    Last name
+                </th>
+                <th>
+                    Birthday
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Language
+                </th>
+            </tr>
+            </thead>
+            <tbody class="table_result-input__body">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
